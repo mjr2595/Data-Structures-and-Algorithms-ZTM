@@ -13,8 +13,16 @@ public class ReverseString {
         return rev.toString();
     }
 
+    private static String reverse2(String string) {
+        // use built-in functions of the StringBuilder class
+        StringBuilder rev = new StringBuilder(string);
+        return rev.reverse().toString();
+    }
+
     public static void main(String[] args) {
         System.out.println(reverse("Hello World"));
         System.out.println(reverse("gfedcba"));
+        System.out.println(reverse2("Hello World"));
+        System.out.println(reverse2("gfedcba"));
     }
 }
